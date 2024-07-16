@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$white: white;
+$d-flex: flex;
+$d-block: block;
+$flex-column: column;
+$d-none: none;
+$margin: 0;
+$margin2: 50px;
+$list-style: none;
+$gap1: 60px;
+$gap2: 20px;
+$gap3:100px;
+$gap4:140px;
+$nav-gap: 5rem;
+$padding-body: 0;
+$p-body: 30px;
+$p-20: 8px;
+$p-40: 40px;
+$w-20: 50px;
+$w-15: 15px;
+$navposition: fixed;
+$top: 0;
+$space-between: space-between;
+$justify-center: center;
+$justify-flex-end: flex-end;
+$text-center: center;
+$align-center: center;
+$object-fit: cover;
+$background-repeat: inherit;
+$width: 100%;
+$width2: 100vw;
+$width3: 40%;
+$width4: 0%;
+$width5: 25%;
+$width6: 250px;
+$height2: 65vh;
+$height: 30vh;
+$m-left: 100px;
+$m-right: 100px;
+$m-top: 50px;
+$m-top2: 50px;
+$m-bottom: 50px;
+$p-top: 80px;
+$p-bottom: 80px;
+$text-center: center;
+$herobg: url('/src/assets/heroimage.png');
+$f-direction: column;   
+$f-wrap: wrap;
+$background-color2: #FAF4F4;
+$background-color: #FFF9E5;
+$background-hover: #FBEBB5;
+$b-ash2: #9F9F9F;
+$underline: underline;
+$l-height: 30px;
+$b-none: none;
+$b-bottom: solid 3px black;
+
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+  
+}
+
+html {
+    font-size: calc(100vw / 1440 * 10);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+body{
+    background: $white;
+    margin: $margin;
+    padding: $padding-body;
+    overflow-x: hidden;
+}
+
+
+// .heroimage{
+//     object-fit: $object-fit;
+//     width: $width;
+// }
+
+#allProducts{
+ width: $width;
+ text-align: center;
+margin: 5rem 0;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 2rem;
+}
+
+.img-container{
+    width: 283px;
+    height: 188px;
+    margin-bottom: 2rem;
+    
+}
+.productTitle {
+    font-size: 1.8rem;
+ 
+
+}
+#productLinks{
+    background: rgba(255, 255, 255, 0.114);
+    align-self: end;
+   
+}
+.productPrice {
+    font-size: 2.5rem;
+    color: black;
+}
+.productdiv:hover{
+    transform: scale(1.05);
+    background-color: #f4f0f0;
+    border-radius:10px;
+    padding: 2px
+    
+}
+
+
+.product-img{
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        
+}
+.numbers{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: $m-bottom;
+
+
+  
+}
+.numberDesign{
+    background-color: #FFF9E5;
+    padding: .8rem;
+    width: 100px;
+    border: $background-color;
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+.numberDesign1{
+    background-color: #FFF9E5;
+        padding: .8rem;
+        width: 50px;
+        border: $background-color;
+        font-size: 2rem;
+        font-weight: 400;
+        cursor: pointer;
+}
+
+.numberDesign:hover,
+.numberDesign1:hover{
+    background-color: $background-hover;
+    border: #FFF9E5;
+
+}
+
+
+.numberDesign.active,
+.numberDesign1.active {
+    background-color:#FBEBB5;;
+    color: black;
+    border-color: #FBEBB5;;
+}
+.navlinks li a,
+.icons li a,
+.heroTexts a,
+.productLinks,
+h2,
+h3,
+h4,
+.footerLinksBlock a{
+    color: #000;
+}
+
+.heroTexts a:hover {
+        color: #000;
+    }
+    #productLinks{
+        color: #000;
+    }
+    .sizesBtn {
+        background-color: #FAF4F4;
+        border: #FAF4F4;
+
+    }
+    .sizesBtn:hover{
+        background-color:#FBEBB5;
+        border: #FAF4F4;
+    }
+    .colorsBtn1{
+        background-color: #816DFA;
+    }
+    .colorsBtn2{
+        background-color: #000;
+    }
+    .colorsBtn3{
+        background-color: #CDBA7B;
+    }
+    #asgardSofa,
+    .outdoorSofa {
+        background-color: #FFF9E5;
+    }
+    .footerLinksBlock a:hover {
+        color: #000;
+    }
+//responsiveness
+
+@media (max-width: 1023px) {
+
+    .herobg {
+        background-image: url('/src/assets/heroimage.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: inherit;
+
+    }
+
+    .productdiv:hover {
+        transform: scale(1.05);
+        background-color: #f4f0f0;
+        border-radius: 10px;
+    }
+
+    .numberDesign {
+        background-color: #FFF9E5;
+        padding: 2rem;
+        width: 9rem;
+        border: #FFF9E5;
+        font-size: 3rem;
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+    #allProducts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .herobg {
+        background-image: url('/src/assets/heroimage.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: inherit;
+
+    }
+
+    .productdiv:hover {
+        transform: scale(1.05);
+        background-color: #f4f0f0;
+        border-radius: 10px;
+    }
+
+    .numbers {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 0;
+
+
+
+    }
+
+    .numberDesign {
+        background-color: #f4f0f0;
+        padding: 2rem;
+        width: 9rem;
+        border: #f4f0f0;
+        font-size: 5rem;
+    }
+
+    .numberDesign:hover {
+        background-color: #FBEBB5;
+
+    }
+
+    .productTitle {
+        font-size: 6rem;
+        font-weight: 400;
+
+
+    }
+
+    .productPrice {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 485px) {
+
+    //all products section
+
+    #allProducts {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+
+
+    .img-container {
+        width: 283px;
+        height: 188px;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .productTitle {
+        font-size: 8.6rem;
+        font-weight: 400;
+
+
+    }
+
+    .productPrice {
+        font-size: 10.4rem;
+        font-weight: 600;
+    }
+
+    .productdiv:hover {
+        transform: scale(1.05);
+        background-color: #f4f0f0;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+    .numbers {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 0;
+
+
+
+    }
+
+    .numberDesign {
+        background-color: #FFF9E5;
+        padding: 2.8rem;
+        width: 100px;
+        border: #FFF9E5;
+        font-size: 8rem;
+
+    }
+    .numberDesign1 {
+        background-color: #FFF9E5;
+        padding: 2.8rem;
+        width: 50px;
+        border: #FFF9E5;
+        font-size: 8rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

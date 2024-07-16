@@ -1,0 +1,349 @@
+$white: white;
+$d-flex: flex;
+$d-block: block;
+$flex-column: column;
+$d-none: none;
+$margin: 0;
+$margin2: 50px;
+$list-style: none;
+$gap1: 60px;
+$gap2: 20px;
+$gap3: 100px;
+$gap4: 140px;
+$nav-gap: 5rem;
+$padding-body: 0;
+$p-body: 30px;
+$p-20: 8px;
+$p-40: 40px;
+$w-20: 50px;
+$w-15: 15px;
+$f-size: 15px;
+$navposition: fixed;
+$top: 0;
+$space-between: space-between;
+$justify-center: center;
+$justify-flex-end: flex-end;
+$text-center: center;
+$align-center: center;
+$object-fit: cover;
+$background-repeat: inherit;
+$width: 100%;
+$width2: 100vw;
+$width3: 40%;
+$width4: 0%;
+$width5: 25%;
+$width6: 200px;
+$height2: 65vh;
+$height: 30vh;
+$m-left: 100px;
+$m-right: 100px;
+$m-top: 50px;
+$m-top2: 50px;
+$m-bottom: 50px;
+$p-top: 80px;
+$p-bottom: 80px;
+$text-center: center;
+$herobg: url('/src/assets/heroimage.png');
+$f-direction: column;
+$f-wrap: wrap;
+$background-color2: #FAF4F4;
+$background-color: #FFF9E5;
+$background-hover: #FBEBB5;
+$b-ash2: #9F9F9F;
+$underline: underline;
+$l-height: 30px;
+$b-none: none;
+$b-bottom: solid 3px black;
+
+
+.inputs {
+    width: 35rem;
+    margin-top: 12px;
+    padding: 11px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 6px;
+}
+
+    .billDetails{
+        font-size: 5rem;
+        margin-left: 11%;
+        margin-right: 11%;
+        margin-top: 50px;
+    }
+    
+.css-13cymwt-control {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: default;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    min-height: 50px;
+    outline: 0 !important;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-color: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+.css-art2ul-ValueContainer2 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-overflow-scrolling: touch;
+    /* position: relative; */
+    overflow: hidden;
+    padding: 14px 8px;
+    box-sizing: border-box;
+}
+.css-1dimb5e-singleValue{
+    font-size: 14px;
+}
+.nameInput{
+        width: 15rem;
+        margin-top: 20px;
+        padding: 11px;
+        border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 6px;
+}
+.billingFormFlex{
+    display: flex;
+    gap: 2rem;
+}
+.formFlex{
+    display: flex;
+}
+.labels{
+    font-size: $f-size;
+    margin-top: $m-top;
+    margin-bottom: 5px;
+}
+#info{
+    margin-top: $m-top;
+}
+.billingForm{
+    display: grid;
+        justify-content: start;
+        justify-items: stretch;
+        padding: 20px;
+}
+.billingPage{
+    display: flex;
+ 
+    align-items: baseline;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 150px;
+}
+
+.error{
+    color: red;
+    font-size: 1.5rem;
+}
+.orderBtn{
+    border: 1px solid black;
+    background-color: white;
+    width: 22rem;
+    margin-top: 3rem;
+ 
+}
+.orderBtn:hover{
+    border: 1px solid black;
+}
+.orderDiv{
+    text-align: center;
+}
+ .checkoutTotalDiv {
+     font-size: 2rem;
+ }
+ .transferText{
+    color: #9F9F9F;
+ }
+ 
+ .checkoutProductText{
+    font-size: 2.4rem;
+    font-weight: 500;
+ }
+  .checkoutProductTextDiv,
+  .transferText,
+  .transferText2,
+  .checkoutText
+{
+    font-size: 1.8rem;
+
+}
+.checkoutTotals{
+    border-bottom: 1px solid #D9D9D9;
+}
+ .checkoutHeaderText,
+ .checkoutProductTextDiv,
+ .checkoutSubtotal,
+ .checkoutHeaderText,
+ .checkoutTotals{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25rem;
+}
+.cartTotalAmt{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #B88E2F;
+}
+.Toastify__toast-body>div:last-child {
+    word-break: break-word;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 3rem;
+}
+
+@media (max-width: 1200px) {}
+@media (max-width: 1024px) {}
+@media (max-width: 650px) {
+    .billingPage {
+        display: block;
+        margin: 0;
+
+
+    }
+
+    .inputs {
+
+        width: 100%;
+        margin-top: 20px;
+        padding: 11px;
+    border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 6px;
+
+    }
+
+    .billingForm {
+        width: 100%;
+    }
+
+    .billingFormFlex {
+        display: flex;
+        gap: 100px;
+    }
+
+    .names {
+        width: 100%;
+    }
+
+    .billDetails {
+        font-size: 30px;
+
+        margin-top: 50px;
+    }
+
+    .checkoutTotalDiv {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .orderBtn {
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 485px) {
+    .billingPage {
+        display: block;
+        margin: 0;
+
+
+    }
+
+    .inputs {
+
+        width: 100%;
+        margin-top: 20px;
+        padding: 11px;
+border: 1px solid hsl(0, 0%, 80%);
+        border-radius: 6px;
+
+    }
+
+    .billingForm {
+        width: 100%;
+    }
+
+    .billingFormFlex {
+        display: flex;
+        gap: 100px;
+    }
+
+    .names {
+        width: 100%;
+    }
+
+    .billDetails {
+        font-size: 30px;
+
+        margin-top: 50px;
+    }
+
+    .checkoutTotalDiv {
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 5rem;
+    }
+    .error{
+    color: red;
+    font-size: 3rem;
+}
+ .checkoutProductText {
+     font-size: 4rem;
+     font-weight: 500;
+ }
+
+ .checkoutProductTextDiv,
+ .transferText,
+ .transferText2,
+ .checkoutText {
+     font-size: 4rem;
+
+ }
+ .cartTotalAmt {
+     font-size: 6rem;
+     font-weight: 700;
+     color: #B88E2F;
+ }
+ .orderBtn:hover {
+     border: 1px solid black;
+ }
+ .orderBtn {
+    border: 1px solid black;
+    background-color: white;
+    width: 50rem;
+    margin-top: 3rem;
+
+}
+.Toastify__toast-body>div:last-child {
+    word-break: break-word;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 5rem;
+}
+}
+
